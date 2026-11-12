@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Private Concierge &amp; Telegram Dispatch — Maison Vespera</title>
+    <meta name="description" content="Connect with Maison Vespera's Geneva and Rome private client concierge via Telegram for bespoke commissions, salon appointments, and direct allocations." />
+    <meta property="og:title" content="Private Concierge &amp; Telegram Dispatch — Maison Vespera" />
+    <meta property="og:description" content="Connect with Maison Vespera's private client concierge via Telegram." />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Top Bar Contract -->
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="brand-wordmark">Maison Vespera</a>
+
+        <nav class="primary-nav" aria-label="Primary Navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="products.html" class="nav-link">Catalog</a>
+          <a href="about.html" class="nav-link">Atelier</a>
+          <a href="contact.html" class="nav-link active">Concierge</a>
+        </nav>
+
+        <div class="header-actions">
+          <button type="button" class="bag-trigger-btn js-open-bag" aria-label="Open Telegram Order Bag">
+            <span>Telegram Bag</span>
+            <span class="tabular-nums">(<span class="js-bag-count">0</span>)</span>
+          </button>
+          <button type="button" class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+        <nav class="mobile-nav-links" aria-label="Mobile Navigation">
+          <a href="index.html">Home</a>
+          <a href="products.html">Catalog</a>
+          <a href="about.html">Atelier</a>
+          <a href="contact.html" class="active">Concierge</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-block">
+        <div class="container">
+          <div class="split-feature">
+            <!-- Left Column: Direct Concierge Channels & Salons -->
+            <div>
+              <div class="kicker-line">Direct Private Client Desk</div>
+              <h1 class="section-title" style="font-size: clamp(2rem, 3.4vw, 3rem); margin-bottom: 1rem;">
+                Telegram Concierge &amp; Salon Appointments
+              </h1>
+              <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                Our private client desk operates seven days a week via encrypted Telegram dispatch. Whether requesting a specific edition number, arranging armored courier delivery, or scheduling a private viewing in Geneva or Rome, a senior specialist responds within 15 minutes.
+              </p>
+
+              <div class="editorial-steps">
+                <div class="editorial-step">
+                  <div class="editorial-step-title">Direct Telegram Desk · @MaisonVesperaConcierge</div>
+                  <p class="editorial-step-text" style="margin-bottom: 0.75rem;">
+                    Instant allocation checks, live movement timing videos, and direct wire or USDT escrow invoicing.
+                  </p>
+                  <a
+                    href="https://t.me/MaisonVesperaConcierge"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-secondary"
+                  >
+                    Open @MaisonVesperaConcierge in Telegram
+                  </a>
+                </div>
+
+                <div class="editorial-step">
+                  <div class="editorial-step-title">Geneva Horological Salon</div>
+                  <p class="editorial-step-text">
+                    Rue du Rhône 42, 1204 Genève, Switzerland · By Appointment Monday–Saturday, 10:00–19:00 CET
+                  </p>
+                </div>
+
+                <div class="editorial-step">
+                  <div class="editorial-step-title">Rome Lapidary &amp; Object Gallery</div>
+                  <p class="editorial-step-text">
+                    Via Margutta 18, 00187 Roma, Italy · By Appointment Tuesday–Saturday, 11:00–19:30 CET
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Interactive Bespoke Commission / Telegram Inquiry Form -->
+            <div style="background: var(--bg-elevated); border: 1px solid var(--border-hairline); border-radius: var(--radius-lg); padding: 2.25rem;">
+              <h2 class="section-title" style="font-size: 1.65rem; margin-bottom: 0.4rem;">Prepare a Bespoke or Private Inquiry</h2>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+                Complete the dossier below to format a direct inquiry for our Telegram concierge or schedule a private viewing.
+              </p>
+
+              <form id="bespoke-inquiry-form" novalidate style="display: flex; flex-direction: column; gap: 1rem;">
+                <div class="form-group">
+                  <label class="form-label" for="inq-name">Your Full Name *</label>
+                  <input type="text" id="inq-name" class="input-field" placeholder="e.g. Clara Beaumont" required />
+                  <div class="form-error" id="err-inq-name"></div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="inq-contact">Telegram Handle or Email *</label>
+                  <input type="text" id="inq-contact" class="input-field" placeholder="e.g. @clarabeau or clara@domain.ch" required />
+                  <div class="form-error" id="err-inq-contact"></div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="inq-subject">Inquiry Subject *</label>
+                  <select id="inq-subject" class="select-field">
+                    <option value="Bespoke Caseback Engraving &amp; Edition Request">Bespoke Caseback Engraving &amp; Edition Request</option>
+                    <option value="Private Salon Viewing Appointment">Private Salon Viewing Appointment</option>
+                    <option value="Custom Architectural Travertine Commission">Custom Architectural Travertine Commission</option>
+                    <option value="Armored Courier &amp; Export Documentation">Armored Courier &amp; Export Documentation</option>
+                  </select>
+                  <div class="form-error" id="err-inq-subject"></div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="inq-salon">Preferred Salon / Desk</label>
+                  <select id="inq-salon" class="select-field">
+                    <option value="Geneva Flagship / Digital Concierge">Geneva Flagship / Digital Concierge</option>
+                    <option value="Rome Via Margutta Gallery">Rome Via Margutta Gallery</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="inq-message">Commission Details or Preferred Dates *</label>
+                  <textarea
+                    id="inq-message"
+                    rows="4"
+                    class="textarea-field"
+                    placeholder="Specify the reference or edition number of interest, desired engraving, or appointment window..."
+                    required
+                  ></textarea>
+                  <div class="form-error" id="err-inq-message"></div>
+                </div>
+
+                <button type="submit" class="btn-primary" style="width: 100%;">
+                  Format Inquiry for Telegram Dispatch
+                </button>
+
+                <div id="inquiry-confirmed-box" style="display: none; margin-top: 0.75rem; padding: 1.15rem; background: rgba(129, 199, 132, 0.1); border: 1px solid var(--status-success); border-radius: var(--radius-sm);">
+                  <div style="font-size: 0.84rem; font-weight: 600; color: var(--status-success); margin-bottom: 0.4rem;">
+                    Inquiry Dossier Prepared · Reference <span class="tabular-nums" id="inquiry-ref-code">INQ-0000</span>
+                  </div>
+                  <pre class="telegram-preview-pre" id="inquiry-telegram-preview" style="margin-bottom: 0.85rem;"></pre>
+                  <a
+                    id="inquiry-telegram-link"
+                    href="https://t.me/MaisonVesperaConcierge"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-primary"
+                    style="width: 100%; background: var(--accent-telegram); color: #fff;"
+                  >
+                    Send Inquiry via Telegram (@MaisonVesperaConcierge)
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Frequently Asked Questions Accordion -->
+      <section class="section-block">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="kicker-line">Acquisition &amp; Logistics</div>
+              <h2 class="section-title">Collector Frequently Asked Questions</h2>
+            </div>
+          </div>
+
+          <div class="faq-list">
+            <div class="faq-item open">
+              <button type="button" class="faq-trigger js-faq-trigger" aria-expanded="true">
+                <span>How does Telegram ordering work after I click Launch Telegram Concierge?</span>
+                <span class="tabular-nums">+</span>
+              </button>
+              <div class="faq-answer">
+                Clicking the dispatch button opens a direct thread with <code>@MaisonVesperaConcierge</code> pre-populated with your itemized SKU list, total valuation, and delivery coordinates. Your assigned specialist confirms the available edition numbers (e.g., #09/25) and issues your formal invoice.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-trigger js-faq-trigger" aria-expanded="false">
+                <span>Which international shipping and insurance carriers do you use?</span>
+                <span class="tabular-nums">+</span>
+              </button>
+              <div class="faq-answer">
+                All timepieces and travertine objects ship via Ferrari Group Armored Logistics or DHL Express High-Value Priority, fully insured at 100% replacement value by Lloyd’s of London until signed receipt. Allocations above $1,500 receive complimentary courier service.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-trigger js-faq-trigger" aria-expanded="false">
+                <span>Can I request a specific edition number or custom titanium caseback engraving?</span>
+                <span class="tabular-nums">+</span>
+              </button>
+              <div class="faq-answer">
+                Yes. Complimentary hand-engraving of up to 18 characters on the Grade-5 titanium caseback or brass plinth is included. Mention your preferred edition number in the Order Bag notes field.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Shared Backdrop & Slide-Over Telegram Order Bag Drawer -->
+    <div class="backdrop-overlay" id="modal-backdrop"></div>
+
+    <aside class="bag-drawer" id="bag-drawer" aria-hidden="true" aria-label="Telegram Concierge Order Bag">
+      <div class="drawer-header">
+        <div>
+          <h2 class="drawer-title">Telegram Order Dossier</h2>
+          <p id="bag-courier-note" style="font-size: 0.75rem; color: var(--text-muted);"></p>
+        </div>
+        <button type="button" class="btn-ghost js-close-bag" aria-label="Close Order Bag">Close</button>
+      </div>
+
+      <div class="drawer-body">
+        <div id="bag-items-container"></div>
+        <div class="bag-summary-box" id="bag-summary-container"></div>
+
+        <form id="telegram-order-form" novalidate style="display: flex; flex-direction: column; gap: 0.9rem;">
+          <div style="font-size: 0.84rem; font-weight: 600; color: var(--text-primary); border-bottom: 1px solid var(--border-hairline); padding-bottom: 0.4rem;">
+            Client Dispatch Coordinates
+          </div>
+          <div class="form-error js-order-err" id="err-order-cart" style="min-height: 0;"></div>
+
+          <div class="form-group">
+            <label class="form-label" for="order-client-name">Full Name (for Provenance Certificate) *</label>
+            <input type="text" id="order-client-name" class="input-field" placeholder="e.g. Alexandre Vasseur" required />
+            <div class="form-error js-order-err" id="err-order-name"></div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="order-client-telegram">Telegram Username or Phone *</label>
+            <input type="text" id="order-client-telegram" class="input-field" placeholder="e.g. @alexandrev" required />
+            <div class="form-error js-order-err" id="err-order-telegram"></div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="order-client-city">Destination City &amp; Country *</label>
+            <input type="text" id="order-client-city" class="input-field" placeholder="e.g. Geneva, Switzerland" required />
+            <div class="form-error js-order-err" id="err-order-city"></div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="order-client-payment">Preferred Settlement Method</label>
+            <select id="order-client-payment" class="select-field">
+              <option value="Wire Transfer / Concierge Invoice">Wire Transfer / Concierge Invoice</option>
+              <option value="USDT / USDC (Escrow Settlement)">USDT / USDC (Escrow Settlement)</option>
+              <option value="Private Salon Collection (Geneva / Rome)">Private Salon Collection (Geneva / Rome)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="order-client-notes">Caseback Engraving / Delivery Instructions</label>
+            <input type="text" id="order-client-notes" class="input-field" placeholder="Optional initials, preferred edition number..." />
+          </div>
+
+          <div class="form-group">
+            <span class="form-label">Live Telegram Order Payload Preview</span>
+            <pre class="telegram-preview-pre" id="telegram-live-preview"></pre>
+          </div>
+
+          <div id="telegram-order-confirmed-box" style="display: none; padding: 1rem; background: rgba(129, 199, 132, 0.1); border: 1px solid var(--status-success); border-radius: var(--radius-sm);">
+            <div style="font-size: 0.82rem; font-weight: 600; color: var(--status-success); margin-bottom: 0.35rem;">
+              Dossier Verified · Reference <span class="tabular-nums" id="confirmed-order-ref">MV-0000</span>
+            </div>
+            <p style="font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+              Your order payload is ready. Click below to open Telegram with your pre-filled allocation dossier.
+            </p>
+            <a
+              id="telegram-direct-dispatch-link"
+              href="https://t.me/MaisonVesperaConcierge"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primary"
+              style="width: 100%; background: var(--accent-telegram); color: #fff;"
+            >
+              Launch Telegram Concierge (@MaisonVesperaConcierge)
+            </a>
+          </div>
+
+          <div style="display: flex; gap: 0.65rem; flex-wrap: wrap;">
+            <button type="submit" class="btn-primary" style="flex: 1;">
+              Verify &amp; Prepare Telegram Order
+            </button>
+            <button type="button" class="btn-secondary" id="copy-order-dossier-btn">
+              Copy Order Dossier
+            </button>
+          </div>
+        </form>
+      </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="brand-wordmark" style="margin-bottom: 0.65rem;">Maison Vespera</div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); max-width: 38ch;">
+              Independent horological and architectural object studio operating between Rue du Rhône, Geneva and Via Margutta, Rome.
+            </p>
+          </div>
+          <div>
+            <div class="footer-heading">Navigation</div>
+            <div class="footer-links">
+              <a href="index.html">Storefront Home</a>
+              <a href="products.html">Complete Catalog</a>
+              <a href="about.html">Atelier &amp; Provenance</a>
+              <a href="contact.html">Private Concierge</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-heading">Collections</div>
+            <div class="footer-links">
+              <a href="products.html">Grade-5 Titanium Horology</a>
+              <a href="products.html">Roman Travertine Objects</a>
+              <a href="products.html">Extrait de Parfum</a>
+              <a href="products.html">Shell Cordovan Leather</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-heading">Direct Dispatch</div>
+            <div class="footer-links">
+              <a href="https://t.me/MaisonVesperaConcierge" target="_blank" rel="noopener noreferrer">Telegram: @MaisonVesperaConcierge</a>
+              <a href="contact.html">Geneva Salon Appointments</a>
+              <a href="contact.html">Bespoke Commissions</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Maison Vespera Horlogerie &amp; Objets SARL. All rights reserved.</span>
+          <span>Static Architecture · Ready for Cloudflare Pages</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/order-logic.js" defer></script>
+    <script src="assets/js/catalog.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+  </body>
+</html>

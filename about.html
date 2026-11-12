@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atelier &amp; Provenance — Maison Vespera</title>
+    <meta name="description" content="Discover the Geneva watchmaking studio and Rome stone workshop behind Maison Vespera's architectural timepieces and travertine objects." />
+    <meta property="og:title" content="Atelier &amp; Provenance — Maison Vespera" />
+    <meta property="og:description" content="Discover the Geneva watchmaking studio and Rome stone workshop behind Maison Vespera." />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Top Bar Contract -->
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="brand-wordmark">Maison Vespera</a>
+
+        <nav class="primary-nav" aria-label="Primary Navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="products.html" class="nav-link">Catalog</a>
+          <a href="about.html" class="nav-link active">Atelier</a>
+          <a href="contact.html" class="nav-link">Concierge</a>
+        </nav>
+
+        <div class="header-actions">
+          <button type="button" class="bag-trigger-btn js-open-bag" aria-label="Open Telegram Order Bag">
+            <span>Telegram Bag</span>
+            <span class="tabular-nums">(<span class="js-bag-count">0</span>)</span>
+          </button>
+          <button type="button" class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+        <nav class="mobile-nav-links" aria-label="Mobile Navigation">
+          <a href="index.html">Home</a>
+          <a href="products.html">Catalog</a>
+          <a href="about.html" class="active">Atelier</a>
+          <a href="contact.html">Concierge</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Section 1: Atelier Story & Philosophy -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <div class="kicker-line">
+                <span>Founded 2019</span>
+                <span aria-hidden="true">·</span>
+                <span>Geneva &amp; Rome</span>
+              </div>
+              <h1 class="hero-title">Where High Horology Meets Monolithic Brutalism</h1>
+              <p class="hero-lead">
+                Maison Vespera was established by horological engineer Julien Vasseur and architectural sculptor Matteo Bellini to unite micro-mechanical Swiss movement making with raw Mediterranean mineral permanence.
+              </p>
+              <div class="hero-cta-row">
+                <a href="products.html" class="btn-primary">Examine Current Editions</a>
+                <a href="contact.html" class="btn-secondary">Request Private Salon Visit</a>
+              </div>
+              <div class="hero-meta-inline">
+                <span>Rue du Rhône 42, Geneva</span>
+                <span aria-hidden="true">·</span>
+                <span>Via Margutta 18, Rome</span>
+              </div>
+            </div>
+
+            <div class="hero-media-card">
+              <img
+                src="assets/images/atelier-workshop.jpg"
+                alt="Master watchmaker bench in Geneva with mechanical calibre under glass dome"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+          </div>
+
+          <div class="metrics-strip">
+            <div class="metric-item">
+              <span class="metric-value">14 Artisans</span>
+              <span class="metric-label">Master Watchmakers, Lapidarists &amp; Saddlers</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">180 Hours</span>
+              <span class="metric-label">Hand-Beveling &amp; Assembly per Chronograph</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">100% Traceable</span>
+              <span class="metric-label">Single-Quarry Tivoli Travertine &amp; Swiss Titanium</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">10 Years</span>
+              <span class="metric-label">Transferable Mechanical Movement Warranty</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Interactive Material & Craftsmanship Dossier Tabs -->
+      <section class="section-block">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="kicker-line">Material Provenance &amp; Disciplines</div>
+              <h2 class="section-title">Three Pillars of the Maison</h2>
+              <p class="section-subtitle">
+                Select a discipline below to inspect our raw material sourcing, tolerances, and finishing standards.
+              </p>
+            </div>
+          </div>
+
+          <div class="craft-tabs-nav" role="tablist" aria-label="Atelier Disciplines">
+            <button
+              type="button"
+              role="tab"
+              aria-selected="true"
+              class="filter-tab-btn js-craft-tab active"
+              data-tab-target="pane-horology"
+            >
+              01. Grade-5 Titanium Horology
+            </button>
+            <button
+              type="button"
+              role="tab"
+              aria-selected="false"
+              class="filter-tab-btn js-craft-tab"
+              data-tab-target="pane-stone"
+            >
+              02. Tivoli Travertine &amp; Bronze
+            </button>
+            <button
+              type="button"
+              role="tab"
+              aria-selected="false"
+              class="filter-tab-btn js-craft-tab"
+              data-tab-target="pane-olfactory"
+            >
+              03. Botanical Extraits &amp; Cordovan
+            </button>
+          </div>
+
+          <!-- Tab Pane 1: Horology -->
+          <div class="craft-pane active" id="pane-horology" role="tabpanel">
+            <div class="feature-image-box">
+              <img src="assets/images/product-chronograph-noir.jpg" alt="Openworked black titanium wristwatch movement" referrerpolicy="no-referrer" />
+            </div>
+            <div>
+              <div class="kicker-line">Geneva Calibre Workshop</div>
+              <h3 class="section-title" style="font-size: 1.8rem; margin-bottom: 0.75rem;">Free-Sprung Architecture &amp; Hand Anglage</h3>
+              <p style="color: var(--text-secondary); margin-bottom: 1.25rem;">
+                Every Maison Vespera watch case is CNC-milled from medical-grade Ti-6Al-4V bar stock and finished with alternating satin-brushed flanks and mirror-polished chamfers. Inside, our column-wheel and openworked calibres employ beryllium-bronze balance wheels for thermal stability.
+              </p>
+              <div class="editorial-steps">
+                <div class="editorial-step">
+                  <div class="editorial-step-title">Acoustic &amp; Isochronism Testing</div>
+                  <p class="editorial-step-text">Each assembled watch undergoes 14 days of five-position thermal cycling between 8°C and 38°C before receiving its individual timing dossier.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Pane 2: Stone & Bronze -->
+          <div class="craft-pane" id="pane-stone" role="tabpanel">
+            <div class="feature-image-box">
+              <img src="assets/images/product-vessel-travertine.jpg" alt="Carved Roman travertine lamp and incense burner" referrerpolicy="no-referrer" />
+            </div>
+            <div>
+              <div class="kicker-line">Via Margutta Lapidary Studio</div>
+              <h3 class="section-title" style="font-size: 1.8rem; margin-bottom: 0.75rem;">Unfilled Roman Travertine &amp; Patinated Brass</h3>
+              <p style="color: var(--text-secondary); margin-bottom: 1.25rem;">
+                We source raw sedimentary stone blocks from family-operated quarries in Tivoli outside Rome. We never fill the natural mineral pores with synthetic resin—preserving the tactile cavities formed by thermal springs over millennia.
+              </p>
+              <div class="editorial-steps">
+                <div class="editorial-step">
+                  <div class="editorial-step-title">Dry-Fit Architectural Joinery</div>
+                  <p class="editorial-step-text">Perforated aged brass diffusers and collars are mechanically keyed into the stone without chemical adhesives, allowing lifetime servicing.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Pane 3: Olfactory & Leather -->
+          <div class="craft-pane" id="pane-olfactory" role="tabpanel">
+            <div class="feature-image-box">
+              <img src="assets/images/product-extrait-oud.jpg" alt="Aura Amber Flux smoked glass perfume bottle" referrerpolicy="no-referrer" />
+            </div>
+            <div>
+              <div class="kicker-line">Grasse &amp; Florence Workshops</div>
+              <h3 class="section-title" style="font-size: 1.8rem; margin-bottom: 0.75rem;">Six-Month Stone Maceration &amp; Vegetable Cordovan</h3>
+              <p style="color: var(--text-secondary); margin-bottom: 1.25rem;">
+                Our extraits are compounded at 32% to 35% oil concentration using wild-harvested Omani frankincense, roasted Java vetiver, and supercritical CO₂ labdanum extracts, bottled in heavy smoked glass with solid turned brass caps.
+              </p>
+              <div class="editorial-steps">
+                <div class="editorial-step">
+                  <div class="editorial-step-title">Saddle-Stitched Shell Cordovan</div>
+                  <p class="editorial-step-text">Our architectural document briefs are stitched entirely by hand using waxed linen thread and fitted with sand-cast solid brass hardware.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Shared Backdrop & Slide-Over Telegram Order Bag Drawer -->
+    <div class="backdrop-overlay" id="modal-backdrop"></div>
+
+    <aside class="bag-drawer" id="bag-drawer" aria-hidden="true" aria-label="Telegram Concierge Order Bag">
+      <div class="drawer-header">
+        <div>
+          <h2 class="drawer-title">Telegram Order Dossier</h2>
+          <p id="bag-courier-note" style="font-size: 0.75rem; color: var(--text-muted);"></p>
+        </div>
+        <button type="button" class="btn-ghost js-close-bag" aria-label="Close Order Bag">Close</button>
+      </div>
+
+      <div class="drawer-body">
+        <div id="bag-items-container"></div>
+        <div class="bag-summary-box" id="bag-summary-container"></div>
+
+        <form id="telegram-order-form" novalidate style="display: flex; flex-direction: column; gap: 0.9rem;">
+          <div style="font-size: 0.84rem; font-weight: 600; color: var(--text-primary); border-bottom: 1px solid var(--border-hairline); padding-bottom: 0.4rem;">
+            Client Dispatch Coordinates
+          </div>
+          <div class="form-error js-order-err" id="err-order-cart" style="min-height: 0;"></div>
+
+          <div class="form-group">
+            <label class="form-label" for="order-client-name">Full Name (for Provenance Certificate) *</label>
+            <input type="text" id="order-client-name" class="input-field" placeholder="e.g. Alexandre Vasseur" required />
+            <div class="form-error js-order-err" id="err-order-name"></div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="order-client-telegram">Telegram Username or Phone *</label>
+            <input type="text" id="order-client-telegram" class="input-field" placeholder="e.g. @alexandrev" required />
+            <div class="form-error js-order-err" id="err-order-telegram"></div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="order-client-city">Destination City &amp; Country *</label>
+            <input type="text" id="order-client-city" class="input-field" placeholder="e.g. Geneva, Switzerland" required />
+            <div class="form-error js-order-err" id="err-order-city"></div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="order-client-payment">Preferred Settlement Method</label>
+            <select id="order-client-payment" class="select-field">
+              <option value="Wire Transfer / Concierge Invoice">Wire Transfer / Concierge Invoice</option>
+              <option value="USDT / USDC (Escrow Settlement)">USDT / USDC (Escrow Settlement)</option>
+              <option value="Private Salon Collection (Geneva / Rome)">Private Salon Collection (Geneva / Rome)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="order-client-notes">Caseback Engraving / Delivery Instructions</label>
+            <input type="text" id="order-client-notes" class="input-field" placeholder="Optional initials, preferred edition number..." />
+          </div>
+
+          <div class="form-group">
+            <span class="form-label">Live Telegram Order Payload Preview</span>
+            <pre class="telegram-preview-pre" id="telegram-live-preview"></pre>
+          </div>
+
+          <div id="telegram-order-confirmed-box" style="display: none; padding: 1rem; background: rgba(129, 199, 132, 0.1); border: 1px solid var(--status-success); border-radius: var(--radius-sm);">
+            <div style="font-size: 0.82rem; font-weight: 600; color: var(--status-success); margin-bottom: 0.35rem;">
+              Dossier Verified · Reference <span class="tabular-nums" id="confirmed-order-ref">MV-0000</span>
+            </div>
+            <p style="font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+              Your order payload is ready. Click below to open Telegram with your pre-filled allocation dossier.
+            </p>
+            <a
+              id="telegram-direct-dispatch-link"
+              href="https://t.me/MaisonVesperaConcierge"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primary"
+              style="width: 100%; background: var(--accent-telegram); color: #fff;"
+            >
+              Launch Telegram Concierge (@MaisonVesperaConcierge)
+            </a>
+          </div>
+
+          <div style="display: flex; gap: 0.65rem; flex-wrap: wrap;">
+            <button type="submit" class="btn-primary" style="flex: 1;">
+              Verify &amp; Prepare Telegram Order
+            </button>
+            <button type="button" class="btn-secondary" id="copy-order-dossier-btn">
+              Copy Order Dossier
+            </button>
+          </div>
+        </form>
+      </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="brand-wordmark" style="margin-bottom: 0.65rem;">Maison Vespera</div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); max-width: 38ch;">
+              Independent horological and architectural object studio operating between Rue du Rhône, Geneva and Via Margutta, Rome.
+            </p>
+          </div>
+          <div>
+            <div class="footer-heading">Navigation</div>
+            <div class="footer-links">
+              <a href="index.html">Storefront Home</a>
+              <a href="products.html">Complete Catalog</a>
+              <a href="about.html">Atelier &amp; Provenance</a>
+              <a href="contact.html">Private Concierge</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-heading">Collections</div>
+            <div class="footer-links">
+              <a href="products.html">Grade-5 Titanium Horology</a>
+              <a href="products.html">Roman Travertine Objects</a>
+              <a href="products.html">Extrait de Parfum</a>
+              <a href="products.html">Shell Cordovan Leather</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-heading">Direct Dispatch</div>
+            <div class="footer-links">
+              <a href="https://t.me/MaisonVesperaConcierge" target="_blank" rel="noopener noreferrer">Telegram: @MaisonVesperaConcierge</a>
+              <a href="contact.html">Geneva Salon Appointments</a>
+              <a href="contact.html">Bespoke Commissions</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Maison Vespera Horlogerie &amp; Objets SARL. All rights reserved.</span>
+          <span>Static Architecture · Ready for Cloudflare Pages</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/order-logic.js" defer></script>
+    <script src="assets/js/catalog.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+  </body>
+</html>

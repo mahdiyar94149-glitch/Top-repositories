@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maison Vespera — Architectural Horology &amp; Objets d'Art</title>
+    <meta name="description" content="Cloudflare Pages ready luxury storefront featuring architectural Grade-5 titanium horology, Roman travertine objets d'art, and direct Telegram concierge ordering." />
+    <meta property="og:title" content="Maison Vespera — Architectural Horology &amp; Objets d'Art" />
+    <meta property="og:description" content="Cloudflare Pages ready luxury storefront featuring architectural Grade-5 titanium horology, Roman travertine objets d'art, and direct Telegram concierge ordering." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Top Bar Contract: Zone 1 (Single Wordmark) | Zone 2 (4 Single-Line Links) | Zone 3 (1 Primary Action) -->
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="brand-wordmark">Maison Vespera</a>
+
+        <nav class="primary-nav" aria-label="Primary Navigation">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="products.html" class="nav-link">Catalog</a>
+          <a href="about.html" class="nav-link">Atelier</a>
+          <a href="contact.html" class="nav-link">Concierge</a>
+        </nav>
+
+        <div class="header-actions">
+          <button type="button" class="bag-trigger-btn js-open-bag" aria-label="Open Telegram Order Bag">
+            <span>Telegram Bag</span>
+            <span class="tabular-nums">(<span class="js-bag-count">0</span>)</span>
+          </button>
+          <button type="button" class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+        <nav class="mobile-nav-links" aria-label="Mobile Navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="products.html">Catalog</a>
+          <a href="about.html">Atelier</a>
+          <a href="contact.html">Concierge</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Section 1: Storefront Hero -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <div class="kicker-line">
+                <span>Geneva &amp; Rome</span>
+                <span aria-hidden="true">·</span>
+                <span>Autumn / Winter Archival Release</span>
+              </div>
+              <h1 class="hero-title">Architectural Horology &amp; Monolithic Stone Objects</h1>
+              <p class="hero-lead">
+                Machined from solid Grade-5 titanium billets and paired with hand-quarried Tivoli travertine. Every numbered edition is allocated directly via our encrypted Telegram Private Concierge desk.
+              </p>
+              <div class="hero-cta-row">
+                <a href="products.html" class="btn-primary">Explore All Editions</a>
+                <button type="button" class="btn-secondary js-add-to-bag" data-product-id="chronograph-calibre-01">
+                  Acquire Calibre I ($4,850)
+                </button>
+              </div>
+              <div class="hero-meta-inline">
+                <span>Direct Telegram Dispatch</span>
+                <span aria-hidden="true">·</span>
+                <span>Five-Position Chronometer Regulated</span>
+                <span aria-hidden="true">·</span>
+                <span>Insured Global Courier</span>
+              </div>
+            </div>
+
+            <div class="hero-media-card">
+              <img
+                src="assets/images/hero-chronograph.jpg"
+                alt="Calibre I Monolith Chronograph in brushed titanium resting beside carved travertine"
+                referrerpolicy="no-referrer"
+              />
+              <div class="hero-scrim-caption">
+                <div>
+                  <div class="hero-caption-sub">Flagship Reference · MV-CHR-01</div>
+                  <div class="hero-caption-title">Calibre I Monolith Chronograph</div>
+                </div>
+                <button type="button" class="btn-ghost js-quickview-btn" data-product-id="chronograph-calibre-01" style="background: rgba(11,11,13,0.75); color: var(--text-primary);">
+                  Inspect Specs
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Full-width 4-column quantitative proof strip below hero split -->
+          <div class="metrics-strip">
+            <div class="metric-item">
+              <span class="metric-value">±1.0 sec/day</span>
+              <span class="metric-label">Five-Position Thermal Regulation</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">25 Pieces</span>
+              <span class="metric-label">Maximum Annual Calibre Allocation</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">48 Hours</span>
+              <span class="metric-label">Insured Armored Door-to-Door Dispatch</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">@MaisonVespera</span>
+              <span class="metric-label">Instant Telegram Concierge Verification</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Featured Collection Grid -->
+      <section class="section-block" id="featured-collection">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="kicker-line">Curated Numbered Series</div>
+              <h2 class="section-title">Current Atelier Allocations</h2>
+              <p class="section-subtitle">
+                Each piece ships in a custom walnut and travertine presentation vault with a signed metallurgic certificate. Add editions to your bag to generate a direct Telegram concierge order.
+              </p>
+            </div>
+            <a href="products.html" class="btn-secondary">View Full Catalog (8)</a>
+          </div>
+
+          <div class="product-grid" id="featured-products-grid">
+            <!-- Pre-rendered static fallback cards; hydrated by assets/js/app.js -->
+            <article class="product-card" data-product-id="chronograph-calibre-01">
+              <div class="product-media">
+                <img src="assets/images/hero-chronograph.jpg" alt="Calibre I Monolith Chronograph" referrerpolicy="no-referrer" />
+              </div>
+              <div class="product-body">
+                <div class="product-meta-line">
+                  <span>Timepieces</span>
+                  <span aria-hidden="true">·</span>
+                  <span>Edition of 25</span>
+                </div>
+                <h3 class="product-title">Calibre I Monolith Chronograph</h3>
+                <p class="product-desc">Brushed Grade-5 Titanium &amp; Fluted Bezel Automatic Chronograph</p>
+                <div class="product-footer">
+                  <span class="product-price tabular-nums">$4,850</span>
+                  <div class="product-actions">
+                    <button type="button" class="btn-ghost js-quickview-btn" data-product-id="chronograph-calibre-01">Inspect</button>
+                    <button type="button" class="btn-card-add js-add-to-bag" data-product-id="chronograph-calibre-01">Add to Bag</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Craftsmanship & Direct Telegram Ordering Protocol -->
+      <section class="section-block">
+        <div class="container">
+          <div class="split-feature">
+            <div class="feature-image-box">
+              <img
+                src="assets/images/atelier-workshop.jpg"
+                alt="Maison Vespera horological workbench in Geneva with movement under glass bell jar"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+
+            <div class="feature-content-box">
+              <div class="kicker-line">Frictionless Private Acquisition</div>
+              <h2 class="section-title">How Direct Telegram Concierge Ordering Works</h2>
+              <p class="section-subtitle">
+                Rather than automated mass-checkout queues, Maison Vespera pairs every collector with an assigned Geneva specialist via Telegram for edition number selection, bespoke caseback engraving, and insured courier routing.
+              </p>
+
+              <div class="editorial-steps">
+                <div class="editorial-step">
+                  <div class="editorial-step-title">01. Curate Your Allocation Bag</div>
+                  <p class="editorial-step-text">
+                    Select your preferred timepieces, travertine luminaires, or extraits de parfum. Your selection persists automatically across all pages.
+                  </p>
+                </div>
+                <div class="editorial-step">
+                  <div class="editorial-step-title">02. Enter Dispatch &amp; Engraving Coordinates</div>
+                  <p class="editorial-step-text">
+                    Open the Telegram Bag drawer and specify your name, Telegram handle, destination city, and preferred settlement method (Bank Wire, USDT, or Private Invoice).
+                  </p>
+                </div>
+                <div class="editorial-step">
+                  <div class="editorial-step-title">03. One-Click Encrypted Telegram Dispatch</div>
+                  <p class="editorial-step-text">
+                    Launch the pre-formatted order dossier directly into Telegram (`@MaisonVesperaConcierge`) or copy the reference code for immediate verification.
+                  </p>
+                </div>
+              </div>
+
+              <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                <button type="button" class="btn-primary js-open-bag">Open Telegram Order Dossier</button>
+                <a href="about.html" class="btn-secondary">Explore the Atelier</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Attributable Collector Testimonials adjacent to claim -->
+          <div class="testimonial-grid">
+            <div class="testimonial-card">
+              <p class="testimonial-quote">
+                “Ordering the Squelette Noir through the Telegram concierge took under four minutes. My specialist sent live macro video of movement serial #07/15 on the timing machine before insured courier dispatch to Zurich.”
+              </p>
+              <div class="testimonial-author">
+                <span>Henrik Lindqvist</span>
+                <span aria-hidden="true">·</span>
+                <span>Principal Architect, Lindqvist &amp; Partner Zurich</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p class="testimonial-quote">
+                “The Palatino Travertine Luminaire arrived in a custom-fitted crate within 48 hours of confirming my allocation on Telegram. The weight of the Roman stone and brushed brass louver is extraordinary.”
+              </p>
+              <div class="testimonial-author">
+                <span>Elena Rostova</span>
+                <span aria-hidden="true">·</span>
+                <span>Creative Director, Studio Monolith Milan</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Shared Backdrop -->
+    <div class="backdrop-overlay" id="modal-backdrop"></div>
+
+    <!-- Quick View Specification Modal -->
+    <dialog class="quickview-modal" id="quickview-modal" aria-hidden="true" aria-labelledby="qv-title">
+      <div class="quickview-grid">
+        <div class="quickview-media">
+          <img id="qv-image" src="assets/images/hero-chronograph.jpg" alt="Product Specification View" referrerpolicy="no-referrer" />
+        </div>
+        <div class="quickview-content">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; margin-bottom: 0.5rem;">
+              <div class="product-meta-line" id="qv-meta">Timepieces · Edition of 25</div>
+              <button type="button" class="btn-ghost js-close-quickview" aria-label="Close Specification Modal">Close</button>
+            </div>
+            <h2 class="section-title" id="qv-title" style="font-size: 1.65rem; margin-bottom: 0.4rem;">Calibre I Monolith Chronograph</h2>
+            <div class="product-price tabular-nums" id="qv-price" style="font-size: 1.25rem; color: var(--accent-brass); margin-bottom: 1rem;">$4,850</div>
+            <p id="qv-description" style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.25rem;"></p>
+
+            <div style="border-top: 1px solid var(--border-hairline); padding-top: 0.85rem; display: flex; flex-direction: column; gap: 0.45rem; font-size: 0.8rem;">
+              <div><strong style="color: var(--text-primary);">Materials:</strong> <span id="qv-materials" style="color: var(--text-secondary);"></span></div>
+              <div><strong style="color: var(--text-primary);">Dimensions:</strong> <span id="qv-dimensions" class="tabular-nums" style="color: var(--text-secondary);"></span></div>
+              <div><strong style="color: var(--text-primary);">Provenance:</strong> <span id="qv-origin" style="color: var(--text-secondary);"></span></div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 0.75rem; padding-top: 1rem; border-top: 1px solid var(--border-hairline);">
+            <button type="button" class="btn-primary js-add-to-bag" id="qv-add-btn" data-product-id="chronograph-calibre-01" style="flex: 1;">
+              Add to Telegram Bag
+            </button>
+            <button type="button" class="btn-secondary js-open-bag">View Bag</button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- Slide-Over Telegram Order Bag Drawer -->
+    <aside class="bag-drawer" id="bag-drawer" aria-hidden="true" aria-label="Telegram Concierge Order Bag">
+      <div class="drawer-header">
+        <div>
+          <h2 class="drawer-title">Telegram Order Dossier</h2>
+          <p id="bag-courier-note" style="font-size: 0.75rem; color: var(--text-muted);"></p>
+        </div>
+        <button type="button" class="btn-ghost js-close-bag" aria-label="Close Order Bag">Close</button>
+      </div>
+
+      <div class="drawer-body">
+        <div id="bag-items-container"></div>
+        <div class="bag-summary-box" id="bag-summary-container"></div>
+
+        <form id="telegram-order-form" novalidate style="display: flex; flex-direction: column; gap: 0.9rem;">
+          <div style="font-size: 0.84rem; font-weight: 600; color: var(--text-primary); border-bottom: 1px solid var(--border-hairline); padding-bottom: 0.4rem;">
+            Client Dispatch Coordinates
+          </div>
+          <div class="form-error js-order-err" id="err-order-cart" style="min-height: 0;"></div>
+
+          <div class="form-group">
+            <label class="form-label" for="order-client-name">Full Name (for Provenance Certificate) *</label>
+            <input type="text" id="order-client-name" class="input-field" placeholder="e.g. Alexandre Vasseur" required />
+            <div class="form-error js-order-err" id="err-order-name"></div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="order-client-telegram">Telegram Username or Phone *</label>
+            <input type="text" id="order-client-telegram" class="input-field" placeholder="e.g. @alexandrev" required />
+            <div class="form-error js-order-err" id="err-order-telegram"></div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="order-client-city">Destination City &amp; Country *</label>
+            <input type="text" id="order-client-city" class="input-field" placeholder="e.g. Geneva, Switzerland" required />
+            <div class="form-error js-order-err" id="err-order-city"></div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="order-client-payment">Preferred Settlement Method</label>
+            <select id="order-client-payment" class="select-field">
+              <option value="Wire Transfer / Concierge Invoice">Wire Transfer / Concierge Invoice</option>
+              <option value="USDT / USDC (Escrow Settlement)">USDT / USDC (Escrow Settlement)</option>
+              <option value="Private Salon Collection (Geneva / Rome)">Private Salon Collection (Geneva / Rome)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="order-client-notes">Caseback Engraving / Delivery Instructions</label>
+            <input type="text" id="order-client-notes" class="input-field" placeholder="Optional initials, preferred edition number..." />
+          </div>
+
+          <div class="form-group">
+            <span class="form-label">Live Telegram Order Payload Preview</span>
+            <pre class="telegram-preview-pre" id="telegram-live-preview"></pre>
+          </div>
+
+          <div id="telegram-order-confirmed-box" style="display: none; padding: 1rem; background: rgba(129, 199, 132, 0.1); border: 1px solid var(--status-success); border-radius: var(--radius-sm);">
+            <div style="font-size: 0.82rem; font-weight: 600; color: var(--status-success); margin-bottom: 0.35rem;">
+              Dossier Verified · Reference <span class="tabular-nums" id="confirmed-order-ref">MV-0000</span>
+            </div>
+            <p style="font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+              Your order payload is ready. Click below to open Telegram with your pre-filled allocation dossier.
+            </p>
+            <a
+              id="telegram-direct-dispatch-link"
+              href="https://t.me/MaisonVesperaConcierge"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primary"
+              style="width: 100%; background: var(--accent-telegram); color: #fff;"
+            >
+              Launch Telegram Concierge (@MaisonVesperaConcierge)
+            </a>
+          </div>
+
+          <div style="display: flex; gap: 0.65rem; flex-wrap: wrap;">
+            <button type="submit" class="btn-primary" style="flex: 1;">
+              Verify &amp; Prepare Telegram Order
+            </button>
+            <button type="button" class="btn-secondary" id="copy-order-dossier-btn">
+              Copy Order Dossier
+            </button>
+          </div>
+        </form>
+      </div>
+    </aside>
+
+    <!-- Quiet Architectural Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="brand-wordmark" style="margin-bottom: 0.65rem;">Maison Vespera</div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); max-width: 38ch;">
+              Independent horological and architectural object studio operating between Rue du Rhône, Geneva and Via Margutta, Rome.
+            </p>
+          </div>
+          <div>
+            <div class="footer-heading">Navigation</div>
+            <div class="footer-links">
+              <a href="index.html">Storefront Home</a>
+              <a href="products.html">Complete Catalog</a>
+              <a href="about.html">Atelier &amp; Provenance</a>
+              <a href="contact.html">Private Concierge</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-heading">Collections</div>
+            <div class="footer-links">
+              <a href="products.html">Grade-5 Titanium Horology</a>
+              <a href="products.html">Roman Travertine Objects</a>
+              <a href="products.html">Extrait de Parfum</a>
+              <a href="products.html">Shell Cordovan Leather</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-heading">Direct Dispatch</div>
+            <div class="footer-links">
+              <a href="https://t.me/MaisonVesperaConcierge" target="_blank" rel="noopener noreferrer">Telegram: @MaisonVesperaConcierge</a>
+              <a href="contact.html">Geneva Salon Appointments</a>
+              <a href="contact.html">Bespoke Commissions</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Maison Vespera Horlogerie &amp; Objets SARL. All rights reserved.</span>
+          <span>Static Architecture · Ready for Cloudflare Pages</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/order-logic.js" defer></script>
+    <script src="assets/js/catalog.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+  </body>
+</html>
